@@ -1,0 +1,55 @@
+#border-example-1 {
+  border: 15px solid black;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  margin: 0em 1em 0em 1em;
+}
+#border-example-2 {
+  border: 2px dashed white;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  position: relative;
+  margin: 0em 1em 0em 1em;
+}
+#padding-example-1 {
+  background-color: #FF4719;
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  margin: 0em 1em 0em 1em;
+}
+#padding-example-2 {
+  background-color: #3083D6;
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  margin: 0em 1em 0em 1em;
+  padding: 5em;
+}
+#padding-example-3 {
+  background-color: #FFD630;
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  margin: 0em 1em 0em 1em;
+  padding: 1.5em;
+}
+#unequal-border-padding-example-1 {
+  border-top: 7px dotted yellow;
+  border-right: 12px solid green;
+  border-bottom: 10px dashed red;
+  border-left: 3px solid blue;
+  padding: 1em;
+  display: inline-block;
+  margin: 0em 1em 0em 1em;
+}
+#unequal-border-padding-example-2 {
+  padding: 3em 1em 0em 10em;
+  border: 5px solid blue;
+  display: inline-block;
+  margin: 0em 1em 0em 1em;
+  position: relative;
+  top: 1em;
+}
