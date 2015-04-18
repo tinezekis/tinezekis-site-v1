@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
-  <title>Your page title here</title>
+  <title>Technical Blog: I Need Space!</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t2-css-design.css">
 </head>
 
 <body>
@@ -18,31 +19,70 @@
   </div>
   <div id="center">
     <div id="blog-post-info">
-      <h1>I Need Some Space!</h1> <!-- insert title here -->
+      <h1>I Need Space!</h1> <!-- insert title here -->
       <h2>The Differences between Margin, Border, and Padding</h2> <!-- insert subtitle here -->
       <h4>Saturday, April 18, 2015</h4> <!-- insert today's date here -->
     </div>
     <div id="content">
       <p>
         <!-- insert body paragrapn here -->
-        A Margin, border, and padding can all serve as spacers between objects on a website. Let's back up for a moment and talk about what constitutes an object. An object is really anything on the site: an image, a text box, a heading, a button, a table, a data cell within a table, a section of color, etc. A web designer will aranges the objects to create the site you see online. But how do can we determine how much space each object takes up? Obviously, each object has a size, but that's not where the story ends. We can also determine how much space the object needs around it, creating space <i>between</i> objects. This is where our margins, borders, and padding come in.
+        A margin, border, and padding can all serve as spacers between objects on a website. Let's back up for a moment and talk about what constitutes an object. An object is really anything on the site: an image, a text box, a heading, a button, a table, a data cell within a table, a section of color, etc. A web designer will aranges the objects to create the site you see online. But how do can we determine how much space each object takes up? Obviously, each object has a size, but that's not where the story ends. We can also determine how much space the object needs around it, creating space <i>between</i> objects. This is where our margins, borders, and padding come in.
       </p>
       <p>
-        Definition of the different types of spacers complete with image
+        From the inside out, we go from the object itself out to the padding, then the border, and finally the margin. As state previously, an <b>object</b> has its own dimensions (width x height). The <b>padding</b> is the space between the object and its border. The <b>border</b>, which may be made visible by the web designer, surrounds the the object. The <b>margin</b> is the space between the border and other objects on the site. Please see the diagram below for further clarification.
       </p>
-      <img src="#" alt="margin-border-padding-example"/>
+      <img src="../imgs/margin-border-padding-diagram.png" alt="margin-border-padding-example"/>
+      <h3>More on Margins</h3>
       <p>
         Examples of margins with code for creating them and images showing the results.
       </p>
-      <img src="#" alt="margin-example" />
+      <img src="../imgs/margin-example-1.png" alt="margin-example-1" />
       <p>
-        Examples of borders
+        Unequal margins
       </p>
-      <img src="#" alt="border-example" />
+      <img src="../imgs/margin-example-2.png" alt="margin-example-2" />
+      <h3>Borders for Beginners</h3>
+      <p>
+        Here is where I will explain borders and how you create them using CSS. For example, here is what you would get if you entered <code>border: 15px solid black;</code> or <code>border: 2px dashed white;</code> for your CSS:
+      </p>
+      <div id="border-example-1">
+        I have a thick, solid, black border.
+      </div>
+      <div id="border-example-2">
+        My border is thin, dashed, and white.
+      </div>
+      <h3>Prepping Your Padding</h3>
       <p>
         Examples of padding
       </p>
-      <img src="#" alt="padding-example" />
+      <div id="padding-example-1">
+        There is little<br>
+        space between my<br>
+        border and me.<br>
+        <b>I feel cramped!</b>
+      </div>
+      <div id="padding-example-2">
+        My border is<br>
+        too far away.<br>
+        <i>I feel lonely!</i>
+      </div>
+      <div id="padding-example-3">
+        My padding is<br>
+        just right. <i><b>I feel<br>
+        like Goldilocks!</b></i>
+      </div>
+      <p>
+        Just as with margins, we can apply our borders and padding unequally on different sides.
+      </p>
+      <div id="unequal-border-padding-example-1">
+        My border is ridiculous! Some sides<br>
+        thick, some sides thin; some solid,<br>
+        one dotted, one dashed...
+      </div>
+      <div id="unequal-border-padding-example-2">
+        How do you think I feel?<br>
+        Look at my uneven padding!
+      </div>
       <p>
         Concluding paragraph
       </p>
