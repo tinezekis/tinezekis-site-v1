@@ -50,8 +50,9 @@ html {
   transform: translate(-50%, -50%)
 }
 #content img {
-  margin-right: auto;
-  margin-left: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 a {
   color: #523B70;
