@@ -42,12 +42,9 @@ html {
   padding-left: 1em;
   padding-right: 1em;
 }
-#home_page_photo {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+#content img {
+  margin-right: auto;
+  margin-left: auto;
 }
 a {
   color: #523B70;
