@@ -26,9 +26,6 @@ html {
   left: 10%;
   margin-top: 0em;
 }
-#header p a {
-  color: #330066;
-}
 #header p a:hover {
   color: #455927;
 }
@@ -70,7 +67,7 @@ html {
   transform: translate(-50%, 0%);
 }
 a {
-  color: #523B70;
+  color: #330066;
 }
 a:hover {
   color: #D1A0F2;
