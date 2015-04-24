@@ -61,6 +61,11 @@ section {
   padding-left: 1em;
   padding-right: 1em;
 }
+section h1 {
+  font-size: 2em;
+  margin-top: .75em;
+  margin-bottom: -.25em;
+}
 section img {
   position: relative;
   left: 50%;
