@@ -71,6 +71,10 @@ section img {
   left: 50%;
   transform: translate(-50%, 0%);
 }
+#blanket {
+  height: 245px;
+  width: 326px;
+}
 a {
   color: #330066;
 }
