@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical Blog: Ruby Classes</title> <!-- insert page title here -->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <header>
+    <h1>Christine ('Tine) Onayemi</h1>
+    <p>
+      Web Developer in progress via <a target="_blank" href="http://devbootcamp.com/">Dev Bootcamp</a>
+    </p>
+    <img id="profile_picture" src="http://www.gravatar.com/avatar/12f8a65c2c77e3b9a53b264d251bb63a.png" alt="profile_picture"/>
+    <nav>
+      <a href="http://caonayemi.github.io">Home</a>
+      <a href="http://caonayemi.github.io/about-tine.html">About 'Tine</a>
+      <a href="http://caonayemi.github.io/portfolio.html">Portfolio</a>
+      <a href="http://caonayemi.github.io/blog-home.html">Blog</a>
+      <a href="http://caonayemi.github.io/contact.html">Contact</a>
+    </nav>
+  </header>
+  <section>
+    <h1>Classy Crash Course</h1> <!-- insert title here -->
+    <h2>Ruby Classes as Real-World Objects</h2> <!-- insert subtitle here -->
+    <h4>Sunday, May 10, 2015</h4> <!-- insert today's date here -->
+    <p>
+       Greetings, dear readers. As many of you know, I'm learning Ruby, one of many programming languages. Ruby is an object-oriented language, which doesn't mean much if you don't know what an object is in terms of programming. So let's talk about it. An <b>object</b> is just a thing. Any thing. Objects are the nouns of a programming language. A <b>method</b> is what objects do; methods are the verbs. Just like a person walks or a bird flies, an object <i>does</i> a method. It is important to note that not all objects can perform all methods. For instance, a person cannot fly (at least not without the assistance of some other object), but a bird can. So how does a program keep track of which objects can perform which methods? Enter: the class.
+    </p>
+    <p>
+      A <b>class</b> creates objects, which we call instances of that class. Each time we create a new object, we say that it is <i>instantiated</i>; this is the most important function of the class. The class also contains the definitions of the methods these objects can perform. Let's look at an example of some real-world objects and describe how they would behave if they were objects of a class. In case you don't know yet, I love to crochet. So for now, we will focus on crochet hooks as our objects.
+    </p>
+    <p>
+      In Ruby, our classes are capitalized. So let us call our example the <code>Hook</code> class. This class should contain all of the methods a crochet hook needs to be able to carry out. So let's talk about what a crochet hook does. Perhaps we want to be able to write a program that can make a blanket. The hook will need to be able to fasten on, complete various types of stiches, and fasten off. That doesn't sound too bad. But how can we differentiate between the various types of stitches? We will need to introduce some instance variables. Each stitch (st) is made up of a series of <code>insert</code>s, <code>yarn_over</code>s (yo), and <code>draw_through</code>s. These will be our instance variables, which can change in value depending on which stitch method we are using. For example, the <code>single_crochet</code> method would require one <code>insert</code>, one <code>yarn_over</code>, one <code>draw_through</code>, another <code>yarn_over</code>, and then two <code>draw_through</code>s (see the image below).
+      <pre><img src="../imgs/single-crochet.jpg" /></pre>
+      Our <code>single_crochet</code> method must contain all of these instructions in order for the program to carry out the task. It will be important that these variables stay <i>inside</i> of the method; we don't want them to be manipulatable by anything outside of our <code>Hook</code> class. Once our blanket is made, no one should be able to alter the number of loops in a stitch or the number of stitches that have been made. (For the sake of our metaphor, let's pretend that there's no such thing as scissors or creatively destructive children).
+    </p>
+    <p>
+      Once we have all of our methods defined in the class, we are ready to create objects and ask them to carry out methods. So let's work on making our blanket! First things first: in order to create a new hook object, we type the following:
+      <pre><code>hook = Hook.new</code></pre>
+      This instantiates (creates) a new object called <code>hook</code>. From there, we can ask our <code>hook</code> object to carry out any of the methods defined in the <code>Hook</code> class. Let's say the blanket pattern calls for 20 single crochet stitches in a row. We would need to perform our <code>single_crochet</code> method 20 times:
+      <pre><code>20.times do</code></pre>
+      <pre><code>  hook.single_crochet</code></pre>
+      <pre><code>end</code></pre>
+      With the right methods called in the right order, we'll end up with a beautiful blanket. And since I'm sure you've all been wondering, here is the first pattern I ever designed myself:
+      <pre><img id="blanket" src="../imgs/onayemi-blanket-1.png" /></pre>
+      All this with a single <code>hook</code> object performing its pre-defined methods.
+    </p>
+
+    <!-- copy and paste as many sections as you want to add paragraphs -->
+    <p>
+      <a href="http://caonayemi.github.io/blog-home.html">Back to Blog Index</a>
+    </p>
+  </section>
+  <footer>
+    <br>
+    &copy; 2015 Christine Onayemi, M.Ed.
+  </footer>
+</main>
+
