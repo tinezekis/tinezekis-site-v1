@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Our Awesome Cheat Sheet!!!!</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet-style.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet-ex-1.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet-ex-2.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>CSS Positioning Cheat Sheet</h1>
+    <h2>By Evangeline Garreau and 'Tine Onayemi</h2>
+  </header>
+  <section>
+    <h3>The Position Property</h3>
+    <ul>
+      <li>Static
+        <p>The default value for the <code>position</code> property. Positioned according to the normal flow of the page and unaffected by the <code>top, bottom, left,</code> and <code>right</code> properties.</p>
+      </li>
+      <li>Relative
+        <p>Moves from its original (static) position according to the values in the <code>top, bottom, left,</code> and <code>right</code> properties. It can move and overlap other elements, but the original position still functions as part of the flow of elements.</p>
+        <p>Common usage: container blocks for absolutely positioned elements.</p>
+      </li>
+      <li>Absolute
+        <p>Positioned relative to its first parent element that has a position other than <code>static</code> (If there's no non-static parent, the containing block is <code>&lt;html&gt;</code>) Similar to <code>relative</code>, but within a parent block instead of the full page. Removed from the flow of elements, so other elements behave as though it doesn't exist. Thus, other elements can fall behind the fixed element.</p>
+      </li>
+      <li>Fixed
+        <p>Positioned relative to the browser window, as opposed to the page. Doesn't move when page is scrolled. Removed from the flow of elements, so other elements behave as though it doesn't exist. Thus, other elements can fall behind the fixed element.</p>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <img src="imgs/cheat-sheet-ex-1.png">
+    <div class="Relative">
+  Here's our relative div. This is our container.
+      <div class="Absolute">Absolute div goes here
+        <ul>
+          <li>Navigation tool #1</li>
+          <li>Navigation tool #2</li>
+          <li>Navigation tool #3</li>
+        </ul>
+      </div>
+      <div class="Static">This div is static. It goes where you think it should. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus ipsum, euismod sed condimentum ut, tristique in est. Fusce et nisi id arcu gravida euismod et ac mauris.</div>
+      <div class="Static">This div is static. It goes where you think it should. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus ipsum, euismod sed condimentum ut, tristique in est. Fusce et nisi id arcu gravida euismod et ac mauris.</div>
+      <div class="Static">This div is static. It goes where you think it should. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus ipsum, euismod sed condimentum ut, tristique in est. Fusce et nisi id arcu gravida euismod et ac mauris.</div>
+    </div>
+    <div class="Fixed">
+      This div is fixed. It doesn't care.
+    </div>
+  </section>
+  <section>
+    <h3>The Float Property</h3>
+    <p>HTML elements normally stack on top of one another. The <code>float</code> property allows an element to shift horizontally -- using the values <code>right</code> and <code>left</code> -- while elements after the floated element wrap around it if there is room on the page. Elements after a floated element behave as though the floated element is missing from the flow, but do not overlap.</p>
+    <p>Common usage: images, layout elements.</p>
+    <p>To prevent an element from wrapping around a floated element, you can appy the <code>clear</code> property to the wrapping element. The values <code>right, left</code> and <code>both</code> indicate which floated element to avoid.</p>
+  </section>
+  <section>
+    <img src="imgs/cheat-sheet-ex-2.png">
+    <div class="float-left">This box is floated left.</div>
+    <div class="float-right">This box is floated right</div>
+    <div class="clear-left">
+      <p>This box is not floated, and is cleared left (not cleared both). Notice how it appears below the floated left box, and the border overlaps the floated right box, but the content wraps around the floated right box.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus ipsum, euismod sed condimentum ut, tristique in est. Fusce et nisi id arcu gravida euismod et ac mauris. Vestibulum augue ligula, vehicula eu dapibus vel, finibus eget sapien. Sed sollicitudin pellentesque consectetur. Aenean dui arcu, ullamcorper a lorem eget, imperdiet condimentum odio. Phasellus viverra vel felis sit amet porttitor. Quisque tristique nec diam eget tempus. Nam facilisis maximus eros aliquet pretium. Quisque eleifend dolor viverra finibus facilisis. Nullam lobortis blandit lobortis. Proin felis ipsum, venenatis ac pharetra eu, suscipit auctor nisi. Integer rhoncus mi eu urna mattis, nec iaculis odio molestie. Maecenas vehicula libero non eros fermentum, a aliquam urna euismod. Sed neque risus, posuere congue turpis et, ultricies mollis ante.</p>
+    </div>
+  </section>
+</body>
+
+<footer>
+  <h4>Resources referenced:</h4>
+  <ul>
+    <li><a href="http://www.w3schools.com/css/css_positioning.asp">CSS Positioning on W3 Schools</a></li>
+    <li><a href="http://www.w3schools.com/css/css_float.asp">CSS Float on W3 Schools</a></li>
+    <li><a href="http://www.learnlayout.com/position-esample.html">Positioning Example</a></li>
+  </ul>
+</footer>

@@ -1,0 +1,32 @@
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+header {
+  border-bottom: solid 1px black;
+  text-align: center;
+}
+
+section {
+  margin-top: 20px;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  border-top: solid 1px black;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+}
