@@ -60,6 +60,7 @@ section {
   overflow: scroll;
   padding-left: 1em;
   padding-right: 1em;
+  background-color: #CBD6BB;
 }
 section h1 {
   font-size: 2em;
@@ -93,12 +94,12 @@ footer {
   text-align: center;
 }
 code {
-  background-color: #92A77E;
+  background-color: #B9C7AD;
   color: #00531C;
   font-size: 1.2em;
 }
 samp {
-  background-color: #92A77E;
+  background-color: #B9C7AD;
   color: #400040;
   font-size: 1.2em;
 }
