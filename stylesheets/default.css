@@ -97,6 +97,10 @@ footer {
   text-align: center;
 }
 
+iframe {
+  margin: 0 auto;
+}
+
 colors #CE2FFF #9F2AE8 #983BFF #682AE8 #5E3BFF
 
 new cs #D1A0F2 #B080F2 #455927 #7D9855 #9DBF54
