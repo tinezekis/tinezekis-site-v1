@@ -6,8 +6,8 @@
 </description>
     <link>http://caonayemi.github.io/</link>
     <atom:link href="http://caonayemi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Aug 2015 13:53:52 -0500</pubDate>
-    <lastBuildDate>Thu, 27 Aug 2015 13:53:52 -0500</lastBuildDate>
+    <pubDate>Thu, 27 Aug 2015 14:06:52 -0500</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2015 14:06:52 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -130,7 +130,7 @@
     &lt;li&gt;&lt;b&gt;Constant Complexity: O(1)&lt;/b&gt; - 1 item takes 1 second, 10 items takes 1 second, 100 items takes 1 second. The input size does not impact the runtime as it grows.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Linear Complexity: O(&lt;i&gt;n&lt;/i&gt;)&lt;/b&gt; - 1 item takes 1 second, 10 items takes 10 seconds, 100 items takes 100 seconds. The input and runtime have a linear relationship; as one increases by a factor of 10, so does the other.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Quadratic Complexity: O(&lt;i&gt;n&lt;/i&gt;&lt;sup&gt;2&lt;/sup&gt;)&lt;/b&gt; - i item takes 1 second, 10 items takes 100 seconds, 100 items takes 10,000 seconds. The runtime grows with the square of the input.&lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;Polynomial Complexity: O(&lt;i&gt;n&lt;/i&gt;&lt;sup&gt;a&lt;/sup&gt;)&lt;/b&gt; - Any complexity that can be written in this form has a &lt;b&gt;polynomial complexity&lt;/b&gt;, or is solvable in &lt;b&gt;polynomial time&lt;/b&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Polynomial Complexity: O(&lt;i&gt;n&lt;/i&gt;&lt;sup&gt;a&lt;/sup&gt;)&lt;/b&gt; - Any complexity that can be written in this form has a polynomial complexity, or is solvable in &lt;b&gt;polynomial time&lt;/b&gt;.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Logarithmic Complexity: O(log &lt;i&gt;n&lt;/i&gt;)&lt;/b&gt; - 1 item takes 1 second, 10 items takes 2 seconds, 100 items takes 3 seconds, 1,000 items takes 4 seconds, etc. The number of seconds is the exponent in this relationship, or more precisely, the runtime grows with the log of the input.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Factorial Complexity: O(&lt;i&gt;n&lt;/i&gt;!)&lt;/b&gt; - The runtime grows with the factorial calculation of the input (see the Traveling Salesman example above).&lt;/li&gt;
   &lt;/ul&gt;
@@ -143,7 +143,6 @@
   &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://stackoverflow.com/questions/487258/plain-english-explanation-of-big-o&quot;&gt;Plain English Explanation of Big O&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.interviewcake.com/big-o-notation-time-and-space-complexity&quot;&gt;Big O Notation: Using Not-Boring Math to Measure Code&#39;s Efficiency&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 31 May 2015 00:00:00 -0500</pubDate>
         <link>http://caonayemi.github.io/blog/technical/2015/05/31/t8-tech.html</link>
