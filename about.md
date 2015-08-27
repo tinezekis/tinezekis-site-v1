@@ -1,9 +1,10 @@
 ---
 layout: page
 title: About 'Tine
+edit_date: 2015-08-24
 permalink: /about/
 ---
-<h4>Edited 2015.08.24</h4>
+<p>Edited {{ page.edit_date | date: "%b %-d, %Y" }}</p>
 <p>
   Christine ('Tine) Onayemi is a Full-Stack Web Developer and recent graduate of <a target="_blank" href="http://devbootcamp.com/">Dev Bootcamp</a>, Chicago. She is a former math teach who believes that education is the greatest tool for social justice. She plans to use her education background and web development skill-set to positively impact the ed-tech industry.
 </p>
