@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Technical Blog | Arrays & Hashes</title>
+  <meta name="description" content="  In all programming languages, we can assign values to variables. For instance, if I want to create a sting that I will use multiple times and/or manipulate...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://caonayemi.github.io/blog/technical/2015/04/25/t3-arrays-hashes.html">
+  <link rel="alternate" type="application/rss+xml" title="CAO Development" href="http://caonayemi.github.io/feed.xml" />
+
+  
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">CAO Development</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About 'Tine</a>
+          
+        
+          
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/portfolio/">Portfolio</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Keeping Track of It All</h1>
+    <h2 class="post-subtitle">Arrays, Hashes, and When to Use Them</h2>
+    <p class="post-meta">Apr 25, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>
+  In all programming languages, we can assign values to variables. For instance, if I want to create a sting that I will use multiple times and/or manipulate in some way, I will want to name it. In Ruby, we assign variables by listing the name followed by an equal sign and the assigned value. For example, <code>greeting = 'Hello, loyal blog readers!'</code> would tell the program that the variable <code>greeting</code> points to the string <code>'Hello, loyal blog readers!'</code> So any time I wanted to use the string or call some method on it, I can use <code>greeting</code> as a sort of nickname. We can also assign other types of values like integers or floats (numbers with a decimal point). For instance, <code>example_int = -47</code> assigns the integer value -47 to the variable <code>example_int</code>. Now, if I call the absolute value method thusly, <code>example_int.abs</code>, the return will be the absolute value of the variable (47).
+</p>
+<p>
+  So we have a way to store values into our variables. But what if we have a lot of variables we need to keep track of. For instance, what if I wanted to store a list of responses to a single question by many respondents, or an entire grocery list? I might not want to create and assign variables for each of these items, as this could become quite cumbersome (<code>response1 = 3</code>, <code>response2 = 7</code>, ..., <code>response 36 = 9</code>). This is where we might choose to use something called an <b>array</b>. Arrays store a list of variables into a series of slots, or indices. So I could create just one array for my entire list of responses: <code>responses = [3, 7,..., 9]</code>. Then, I can reference each item within the list based on its index (slot) in the array. But here's where things get tricky: we actually begin counting from index 0. Thus, <code>responses[0]</code> refers to the first index and returns a value of 3. In order to get our second and 36th values, we would need to call <code>responses[1]</code> and <code>responses[35]</code>, respectively. If our list has 36 items, then the 37th index (<code>responses[36]</code>) would return the <code>nil</code> value, or "nothing". There can even be indices within a list that return the <code>nil</code> value. In order to understand this better, let's talk about another way we can assign values to an array.
+</p>
+<p>
+  Rather than listing all values at once, we can also assign values to an array individually by index, or slot position. For instance, I can create an empty array like this: <code>chicago_teams[]</code> or <code>chicago_teams = Array.new</code> (please note that "Array" gets capitalized in this second option). Then, I can assign individual values thusly:<br />
+  <code>chicago_teams[0] = 'Bulls'</code><br />
+  <code>chicago_teams[1] = 'White Sox'</code><br />
+  <code>chicago_teams[3] = 'Blackhawks'</code><br />
+  <code>puts chicago_teams</code><br />
+  Printing out the array would produce the following:<br />
+  <code>Bulls</code><br />
+  <code>White Sox</code><br />
+  <code>nil</code><br />
+  <code>Blackhawks</code><br />
+  The third index (<code>chicago_teams[2]</code>) has not been assigned and thus contains the <code>nil</code> value.
+</p>
+<p>
+  Hopefully by now, we're getting used to referring to items in an array by their index numbers. But what if we don't want to reference our items this way? For example, what if we had a list of all basketball teams in the NBA? Would we really want to remember which index number went with each team? Wouldn't it be easier to reference those teams by city instead? Well, fortunately, we have a tool for that as well: a <b>hash</b>. A hash organizes information in key-value pairs. So in this case, we might reference the value <code>'Bulls'</code> with the key <code>chicago</code> and <code>'Bucks'</code> with the key <code>milwaukee</code>. We could use any of these formats to set up the hash:<br />
+  <code>nba_teams = {'chicago', 'Bulls', 'milwauke', 'Bucks'}</code><br />
+  <code>nba_teams = { ['chicago', 'Bulls'], ['milwaukee', 'Bucks'] }</code><br />
+  <code>nba_teams = {'chicago' =&gt; 'Bulls', 'milwaukee' =&gt; 'Bucks'}</code><br />
+  Or, just like with the array, we can create an empty hash and then assign key-value pairs later:<br />
+  <code>nba_teams{}</code> or <code>nba_teams = Hash.new</code> (notice that "Hash" also gets capitalized in this situation)<br />
+  <code>nba_teams['chicago'] = 'Bulls'</code><br />
+  <code>nba_teams['milwaukee'] = 'Bucks'</code><br />
+  No matter how we created and assigned the hash, we can now reference the values by their keys. So <code>nba_teams['chicago']</code> now points to the value of string <code>'Bulls'</code>.
+</p>
+<p>
+  So we can see that hashes and arrays have different properties that make them useful for different situations. Arrays help us to keep track of a list of values that have a specific order. We can use array commands to rearrange this order, sort the items in the list, reference items by index number, and many other tasks. All the while, the array keeps track of where each item is stored. Hashes do not maintain information in a particular order. Instead, values are stored and referenced by their keys. Perhaps we want to keep track of Sally and Joe's respective responses to a question, instead of respondents 1 and 2. In this case, a hash might be a more useful way to store this information. In order to determine whether you need an array or a hash, it will be best to consider what you need to do with this information, and how it can most conveniently be referenced when needed.
+</p>
+<p>
+  I hope this brief introduction has given you an idea of how these two objects differ and when you might need either one. Stay tuned for more of my coding discoveries as the journey continues!
+</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">CAO Development</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>CAO Development</li>
+          <li><a href="mailto:caonayemi@gmail.com">caonayemi@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/caonayemi">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">caonayemi</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://www.linkedin.com/in/caonayemi">
+              <span class="icon  icon--linkedin">
+                <svg class= "linkedin-icon-svg" id="Layer_1" style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="65px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M49.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H49.837z M21.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H21.959z M33,64  C16.432,64,3,50.568,3,34C3,17.431,16.432,4,33,4s30,13.431,30,30C63,50.568,49.568,64,33,64z M25.354,48.137V27.71h-6.789v20.427  H25.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#828282;"/>
+                </svg>
+              </span>
+
+              <span class="username">caonayemi</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/caonayemi">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">caonayemi</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">CAO Development is the official website of Christine ('Tine) A. Onayemi. 'Tine is a full-stack web developer, former math teacher, and lifelong learner. Her interests include social justice, choral singing, crochet, and swing dance.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,16 @@
+# Site settings
+title: CAO Development
+email: caonayemi@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  CAO Development is the official website of Christine ('Tine) A. Onayemi.
+  'Tine is a full-stack web developer, former math teacher, and lifelong learner.
+  Her interests include social justice, choral singing, crochet, and swing dance.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://caonayemi.github.io" # the base hostname & protocol for your site
+sample_variable: test
+linkedin_username: caonayemi
+twitter_username: caonayemi
+github_username:  caonayemi
+
+# Build settings
+markdown: kramdown
