@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About 'Tine
-edit_date: 2015-08-24
+edit_date: 2017-07-11
 permalink: /about/
 ---
 <p>Edited {{ page.edit_date | date: "%b %-d, %Y" }}</p>
