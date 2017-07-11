@@ -6,7 +6,7 @@ permalink: /about/
 ---
 <p>Edited {{ page.edit_date | date: "%b %-d, %Y" }}</p>
 <p>
-  Christine ('Tine) Onayemi is a Full-Stack Web Developer and recent graduate of <a target="_blank" href="http://devbootcamp.com/">Dev Bootcamp</a>, Chicago. She is a former math teach who believes that education is the greatest tool for social justice. She plans to use her education background and web development skill-set to positively impact the ed-tech industry.
+  Christine ('Tine) Zekis is a Full-Stack Web Developer and recent graduate of <a target="_blank" href="http://devbootcamp.com/">Dev Bootcamp</a>, Chicago. She is a former math teach who believes that education is the greatest tool for social justice. She plans to use her education background and web development skill-set to positively impact the ed-tech industry.
 </p>
 <p>
   'Tine earned her BA from Washington University in St. Louis where she majored in African & African American Studies and Psychology and minored in Music. She went on to receive her MEd from DePaul University in Teaching & Learning - Secondary Education with a concentration in Mathematics.

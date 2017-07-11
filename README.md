@@ -1,5 +1,5 @@
-#CAO Development
-### caonayemi.github.io
-Christine Onayemi's DBC Phase 0 GitHub pages website
+# Zekis Development
+### tinezekis.github.io
+DBC Phase 0 GitHub Pages Website of Christine Zekis nee Onayemi
 
-CAO Development is the official website of Christine ('Tine) A. Onayemi. 'Tine is a full-stack web developer, former math teacher, and lifelong learner. Her interests include social justice, choral singing, crochet, and swing dance.
+Zekis Development is the official website of Christine ('Tine) Zekis. 'Tine is a full-stack web developer, former math teacher, and lifelong learner. Her interests include social justice, choral singing, crochet, and swing dance.
