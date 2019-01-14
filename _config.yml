@@ -3,7 +3,7 @@ title: Zekis Development
 email: tinezekis@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Zekis Development is the official website of Christine ('Tine) Zekis.
-  'Tine is a full-stack web developer, former math teacher, and lifelong learner.
+  'Tine is a full-stack software engineer, former math teacher, and lifelong learner.
   Her interests include social justice, choral singing, crochet, and swing dance.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tinezekis.github.io" # the base hostname & protocol for your site
