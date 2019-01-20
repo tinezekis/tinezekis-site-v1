@@ -1,13 +1,16 @@
 ---
 layout: page
 title: About 'Tine
-edit_date: 2019-01-13
+edit_date: 2019-01-19
 permalink: /about/
 ---
 <p>Edited {{ page.edit_date | date: "%b %-d, %Y" }}</p>
 <p>
   Christine ('Tine) Zekis is Software Engineer and former math teach who believes that education is the greatest tool for social justice. She combines her education background and web development skill-set to champion Diversity, Equity, and Inclusion in the tech industry, while delivering clean, well-tested code.
 </p>
+<div style="margin: auto; width: 400px;">
+  <img src="../imgs/tine-headshot.jpg">
+</div>
 <p>
   'Tine earned her BA from <a target="_blank" href="https://wustl.edu/">Washington University in St. Louis</a> where she majored in African &amp; African American Studies and Psychology and minored in Music. She went on to receive her MEd from <a target="_blank" href="https://www.depaul.edu/">DePaul University</a> in Teaching &amp; Learning - Secondary Education with a concentration in Mathematics. She made the change to programming in 2015, attending <a target="_blank" href="https://en.wikipedia.org/wiki/Dev_Bootcamp">Dev Bootcamp</a>, Chicago.
 </p>
