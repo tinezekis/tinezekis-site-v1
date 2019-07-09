@@ -4,6 +4,9 @@ title: "Technical Blog | Ruby Classes"
 post_title: "Classy Crash Course"
 post_subtitle: "Ruby Classes as Real-World Objects"
 date: 2015-05-10
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 

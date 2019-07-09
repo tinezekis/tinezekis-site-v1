@@ -4,6 +4,9 @@ title: "Cultural Blog | Tech Issues"
 post_title: "The Intersectionality Riddle"
 post_subtitle: "What's Black and White and Feminist All Over?"
 date: 2015-05-03
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog cultural
 ---
 

@@ -4,6 +4,9 @@ title: "Cultural Blog | Values"
 post_title: "It's All about Me"
 post_subtitle: "Combating Stereotype Threat through Self-Improvement"
 date: 2015-05-25
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog cultural
 ---
 

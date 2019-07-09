@@ -4,6 +4,9 @@ title: "Cultural Blog | Thinking Style"
 post_title: "How Should I DBC?"
 post_subtitle: "Musings of an Abstract Sequential Thinker"
 date: 2015-04-26
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog cultural
 ---
 

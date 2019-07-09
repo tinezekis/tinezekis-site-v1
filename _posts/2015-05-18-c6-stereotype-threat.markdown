@@ -4,6 +4,9 @@ title: "Cultural Blog | Stereotype Threat"
 post_title: "Confirming the Stereotypes"
 post_subtitle: "Diary of a Loud, Angry Black Woman"
 date: 2015-05-18
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog cultural
 ---
 

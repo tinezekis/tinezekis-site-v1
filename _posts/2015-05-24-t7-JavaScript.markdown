@@ -4,6 +4,9 @@ title: "Technical Blog | JavaScript"
 post_title: "Lost in Translation?"
 post_subtitle: "Ruby Hashes vs. JavaScript Objects"
 date: 2015-05-24
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 

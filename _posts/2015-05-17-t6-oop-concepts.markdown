@@ -4,6 +4,9 @@ title: "Technical Blog | Object-Oriented Programming"
 post_title: "Acting as Individuals and as a Group"
 post_subtitle: "Instance Methods vs. Class Methods"
 date: 2015-05-17
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 

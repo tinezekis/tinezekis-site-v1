@@ -5,6 +5,9 @@ title: "Technical Blog | I Need Space!"
 post_title: "I Need Space!"
 post_subtitle: "The Differences between Margin, Border, and Padding"
 date: 2015-04-18
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 <b>NOTE:</b> Need to add CSS from previous website to get make the examples in this post work properly

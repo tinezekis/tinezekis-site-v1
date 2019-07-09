@@ -4,6 +4,9 @@ title: "Technical Blog | Arrays & Hashes"
 post_title: "Keeping Track of It All"
 post_subtitle: "Arrays, Hashes, and When to Use Them"
 date: 2015-04-25
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 

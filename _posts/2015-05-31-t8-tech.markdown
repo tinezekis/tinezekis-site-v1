@@ -4,6 +4,9 @@ title: "Technical Blog"
 post_title: "Getting Asymptotes with the Big O"
 post_subtitle: "Let's Talk about Math, Baby!"
 date: 2015-05-31
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 

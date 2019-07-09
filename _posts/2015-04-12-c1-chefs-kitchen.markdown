@@ -4,6 +4,9 @@ title: "Cultural Blog | Chefs in the Kitchen"
 post_title: "DBC First Impressions"
 post_subtitle: "Kitchen vs. Table"
 date: 2015-04-12
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog cultural
 ---
 

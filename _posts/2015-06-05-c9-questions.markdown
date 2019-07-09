@@ -4,6 +4,9 @@ title: "Cultural Blog | Questions"
 post_title: "The Most Important Question"
 post_subtitle: "How Do I Ask a Good Question?"
 date: 2015-06-05
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog cultural
 ---
 

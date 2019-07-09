@@ -4,6 +4,9 @@ title: "Technical Blog | Git Bloggin'"
 post_title: "What's GitHub?"
 post_subtitle: "Version Control and Why You Want It"
 date: 2015-04-12
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 

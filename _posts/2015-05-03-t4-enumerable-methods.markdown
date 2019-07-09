@@ -4,6 +4,9 @@ title: "Technical Blog | Enumerable Methods"
 post_title: "Enumerable#map"
 post_subtitle: "Taking It One Element at a Time"
 date: 2015-05-03
+# Replace post_title with title when ready
+# Replace post_subtitle with subtitle when ready
+# background: '../imgs/keyboard4.png'
 categories: blog technical
 ---
 

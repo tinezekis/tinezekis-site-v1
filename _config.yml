@@ -12,5 +12,8 @@ linkedin_username: tinezekis
 twitter_username: tinezekis
 github_username:  tinezekis
 
+# Jekyll theme
+theme: jekyll-theme-clean-blog
+
 # Build settings
 markdown: kramdown
