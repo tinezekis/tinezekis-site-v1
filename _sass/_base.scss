@@ -37,13 +37,33 @@ ul, ol, dl, figure,
 
 
 
-// /**
-//  * Images
-//  */
-// img {
-//     max-width: 100%;
-//     vertical-align: middle;
-// }
+/**
+ * Images
+ */
+img {
+    max-width: 75%;
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Image Captions
+ */
+.caption {
+    text-align: center;
+    @media (min-width: 1025px) {
+        // white font inside the image; bottom right corner
+    }
+}
+
+// Find out what min-width should be (use iPhone)
+.fa-bars {
+    @media (min-width: 1025px) {
+        display: none;
+    }
+}
 
 
 
